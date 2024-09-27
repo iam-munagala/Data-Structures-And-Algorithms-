@@ -52,7 +52,12 @@ void printArray(vector<int> &arr)
 }
 int main()
 {
-    vector<int> arr = {0, 1, 0, 3, 12};
+    vector<int> arr;
+    arr.push_back(0);
+    arr.push_back(1);
+    arr.push_back(0);
+    arr.push_back(3);
+    arr.push_back(12);
     moveZeroesToEnd(arr);
     printArray(arr);
     return 0;
