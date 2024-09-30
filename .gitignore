@@ -31,6 +31,9 @@
 *.out
 *.app
 
-./input.txt
+input.txt
+output.txt
 
-./output.txt
+# .cph files 
+
+*.cph
