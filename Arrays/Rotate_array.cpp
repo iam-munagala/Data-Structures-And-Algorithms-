@@ -43,7 +43,7 @@ void rotateArrayBrute(vector<int> &arr, int k)
 
     for (int i = 0; i < n; i++)
     {
-        temp[(i + k) % n] = arr[i];
+        temp[(i + k) % n] = arr[i];  /* (0+3)*7 */
     }
 
     arr = temp;
@@ -64,9 +64,9 @@ void rotateArray(vector<int> &arr, int k)
     k = k % n;
     if (k == 0)
         return;
-    reverse(arr.begin(), arr.end());
-    reverse(arr.begin(), arr.begin() + k);
-    reverse(arr.begin() + k, arr.end());
+    reverse(arr.begin(), arr.end());  
+    reverse(arr.begin(), arr.begin() + k); 
+    reverse(arr.begin() + k, arr.end()); 
 }
 
 void printArray(vector<int> arr)

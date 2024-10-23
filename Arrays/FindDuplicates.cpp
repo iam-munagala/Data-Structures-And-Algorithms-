@@ -18,10 +18,23 @@ Explanation: g occurs 2 times in the string, k occurs 2 times in the string, s o
 #include <bits/stdc++.h>
 using namespace std;
 
+/*
+    geeks for geekss 
+     
+     g - 1 2
+     e -1 2 3 3
+     k -1  2 
+     s - 1 2 
+     f -1 
+     o -1 
+     r -1 
+
+*/
+
 void findDuplicates(string &str)
 {
     unordered_map<char, int> count;
-    for (int i = 0; i < str.size(); i++)
+    for (int i = 0; i < str.size(); i++)  
     {
         count[str[i]]++;
     }

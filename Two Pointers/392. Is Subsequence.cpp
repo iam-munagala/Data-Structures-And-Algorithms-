@@ -44,6 +44,14 @@ public:
     }
 };
 
+
+/*
+                     i 
+        s = i=   a  b c  length = 3
+        t =  j = a h b g d c lenght = 6 
+
+*/
+
 int main()
 {
 

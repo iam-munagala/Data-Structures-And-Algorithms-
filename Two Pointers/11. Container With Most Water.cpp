@@ -30,17 +30,17 @@ using namespace std;
 class MostWater
 {
 public:
-    int findMaximumArea(vector<int> &height)
+    int findMaximumArea(vector<int> &height)  /*   1,8,6,2,5,4,8,3,7 */
     {
         int low = 0;
         int high = height.size() - 1;
         int maxArea = 0;
         while (low < high)
         {
-            int width = high - low;
+            int width = high - low;    
             int h = min(height[low], height[high]);
             int area = width * h;
-            maxArea = max(maxArea, area);
+            maxArea = max(maxArea, area); // (0,6) 
 
             if (height[low] < height[high])
             {
