@@ -4,6 +4,8 @@ function decodeYValue(value, base) {
   return parseInt(value, base);
 }
 
+
+
 function parseJSONInput(filename) {
   const rawData = fs.readFileSync(filename);
   const data = JSON.parse(rawData);
